@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.TimeZone;
 import java.text.ParseException;
 
-class FullTimeGMT extends UDF {
+public final class FullTimeGMT extends UDF {
     public String evaluate(final String dateTime) {
         DateFormat inputDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         DateFormat outputDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
