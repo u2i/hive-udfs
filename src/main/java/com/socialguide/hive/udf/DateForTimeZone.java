@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.TimeZone;
 import java.text.ParseException;
 
-class DateForTimeZone extends UDF {
+public final class DateForTimeZone extends UDF {
 
     public String evaluate(final String dateTime, final String timezone) {
         DateFormat inputDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
